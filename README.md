@@ -6,4 +6,4 @@ Depending on the type of content/document processed computing requirments can be
 
 When xillions of documents are to be processed on a deadline, one needs to have those questions answered. Planning at times gets punched in the nose by reality.
 
-Enter Backflow. With its low code requirements, more details further, domain knowledge can be encapsuled in a highly secured cloud sandbox, deployed only when the need arises. The benefits of this approach, in addtion to effeciency, is safety: if the resources are not deployed, then they can not be hacked. Furthermore, authorization tasks are considered part of the domain knowledge, thus in users' control.  
+Enter Backflow. With its low code requirements, more details further down, domain knowledge can be encapsuled in a highly secured cloud sandbox, deployed only when the need arises. The benefits of this approach, in addtion to effeciency, is safety: if the resources are not deployed, then they can not be hacked. Furthermore, auth tasks are considered part of the domain knowledge, thus in users' control. After completion, everything can be deleted leaving nothing behind.
