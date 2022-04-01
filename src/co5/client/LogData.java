@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public class LogData {
-    public String co4Id;
+    public String co5Id;
     public String stage;
     public String message;
     public String[] items;
@@ -21,7 +21,7 @@ public class LogData {
     }
 
     public LogData(UUID id, String m){
-        co4Id = id.toString();
+        co5Id = id.toString();
         message = m;
     }
     
@@ -32,13 +32,13 @@ public class LogData {
     
     public LogData(String s, String id, String m){
         stage = s;
-        co4Id = id;
+        co5Id = id;
         message = m;
     }
     
     public LogData(String s, String i, long et, long ldt){
         stage = s;
-        co4Id = i;
+        co5Id = i;
         executionTime = et;
         startTime = ldt;
     }

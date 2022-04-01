@@ -1,0 +1,50 @@
+plugins {
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
+    id 'maven-publish'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly 'com.google.code.gson:gson:2.8.6'
+}
+
+compileJava {
+    doFirst {
+        options.compilerArgs += [
+            '--module-path', classpath.asPath
+        ]
+        classpath = files()
+    }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'co5' 
+            artifactId 'backflow-client' 
+            version '0.0'
+
+            from components.java
+            pom {
+                description = 'Classes needed to plug the client logic into backend infrastructure'
+                developers {
+                    developer {
+                        id = 'co5'
+                        name = 'co5'
+                        email = 'info@co5.be'
+                    }
+                }
+            }
+        }
+    }
+}
