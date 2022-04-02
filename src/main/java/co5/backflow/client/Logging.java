@@ -1,4 +1,4 @@
-package co5.client;
+package co5.backflow.client;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -27,3 +27,4 @@ public class Logging {
         }
     }
 }
+
