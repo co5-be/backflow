@@ -30,7 +30,7 @@ java {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId rootProject.name 
+            groupId 'co5.backflow' 
             artifactId 'backflow-client' 
             version '0.0'
 
