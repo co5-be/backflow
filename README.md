@@ -10,13 +10,14 @@ Enter Backflow. With its low code requirements, domain knowledge can be encapsul
 
 VPC Resources |Access
 -----|------
-VPN 1|RESTRICTED 
+VPN 1|RESTRICTED(2) 
 ALB|RESTRICTED
 VPN 2|PRIVATE
 ECS Cluster(1) |PRIVATE
 S3 BUCKET|RESTRICTED
 
 (1) Autoscaling enabled according to job requirements
+(2) Every restricted resource is tied to an specific, user-provided IP address
 
 
 
