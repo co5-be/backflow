@@ -2,7 +2,7 @@
 
 To a large extent, being able to execute domain knowlegde/expertise quickly and efficiently on the cloud is the main purpose of digitization efforts. As these efforts advance, things get complicated when unavoidably content needs to be processed. 
 
-Depending on the type of content/document processed computing needs can be all over the place. Then there is the selection of a processing library. One not suited to the task can sour any good progress achieved. Selecting the appropriate library brings other challenges: at what size the content starts triggering expensive scaling? Do these computing resources need to be available constantly? How to handle failures/reprocessing? Is the setup safe and secured?
+Depending on the type of content/document processed computing needs can be all over the place. Then there is the selection of a processing library. One not suited to the task can sour any good progress achieved. Selecting the appropriate library brings other challenges: which content size triggers expensive scaling? Do these computing resources need to be available constantly? How to handle failures/reprocessing? Are the resources safe and secured?
 
 When millions of documents are to be processed on a deadline, one needs to have those questions answered. Planning at times gets punched in the nose by reality.
 
