@@ -6,7 +6,7 @@ Depending on the type of content/document processed computing needs can be all o
 
 When millions of documents are to be processed on a deadline, one needs to have those questions answered. Planning at times gets punched in the nose by reality.
 
-Enter Backflow. With its low code requirements, domain knowledge can be encapsulated and deployed to a private, custom cloud computing sandbox (see table) only when the need arises. Jobs are **metered**, i.e: an initial size is requested and if this limit is reached resources will be removed automatically. The benefits of this approach, in addtion to effeciency, is security: if the resources are not deployed, then they can not be hacked. Furthermore, auth tasks are the in users' control. Every request is backed up and a fail-safe system ensures that in the event system crashes every request is completed.
+Enter Backflow. With its low code requirements, domain knowledge can be encapsulated and deployed to a private, custom cloud computing sandbox (see table) only when the need arises. Sandbox deployment takes less than 5 minutes. Jobs are **metered**, i.e: an initial size is requested and if this limit is reached resources will be removed automatically. The benefits of this approach, in addtion to effeciency, is security: if the resources are not deployed, then they can not be hacked. Furthermore, auth tasks are the in users' control. Every request is backed up and a fail-safe system ensures that in the event system crashes every request is completed.
 
 VPC Resources |Access
 -----|------
