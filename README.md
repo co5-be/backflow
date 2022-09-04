@@ -21,7 +21,7 @@ S3 BUCKET|RESTRICTED
 
 # Low Code
 
-Only a jar with dependencies (also known as uber jar) is required. Within this jar only a hook class needs to be exposed so the domain logic can be plugged in the different workers. No attributes are used to avoid scanning of classes. The processing is defined by a list of steps using functional programming.
+Only a jar with dependencies (also known as uber jar) is required. Within this jar only a hook class needs to be exposed so the domain logic can be plugged in the different workers. No attributes are used to avoid scanning of classes. The processing is defined by a list of steps using functional programming. From initial service request to custom live endpoint, it takes less than 10 minutes.
 
 # Authorization
 
