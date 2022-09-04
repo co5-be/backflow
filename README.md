@@ -19,6 +19,14 @@ S3 BUCKET|RESTRICTED
 (1) Autoscaling enabled according to job requirements
 (2) Every restricted resource is tied to an specific, user-provided IP address
 
+# Low Code
+
+Only a jar with dependencies (also known as uber jar) is required. Within this jar only a hook class needs to be exposed so the domain logic can be plugged in the different workers. No attributes are used to avoid scanning of classes. The processing is defined by a list of steps using functional programming.
+
+# Authorization
+
+One last functional programming requirement is the authorization callback. Before any request is processed, a callback to the authorization function is made. If the request is valid then processing can continue.
+
 # Autoscaling
 
 Currently the user can specify the number of cpus required (as a multiple of 1024, say two cpus would be 2048) and the max capacity utilization needed to trigger scaling up (say 90 for 90% utilization trigger) The scaling down is left to provider defaults. The initial instance count is 1 and the limit is 20 instances.
