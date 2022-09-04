@@ -23,6 +23,10 @@ S3 BUCKET|RESTRICTED
 
 Only a jar with dependencies (also known as uber jar) is required. Within this jar only a hook class needs to be exposed so the domain logic can be plugged in the different workers. No attributes are used to avoid scanning of classes. The processing is defined by a list of steps using functional programming. From initial service request to custom live endpoint, it takes less than 10 minutes.
 
+# What you get
+
+The custom live endpoint fronts an application load balancer with the backing of an ECS cluster with autoscaling enabled where the business logic will be waiting to process requests.
+
 # Authorization
 
 One last functional programming requirement is the authorization callback. Before any request is processed, a callback to the authorization function is made. If the request is valid then processing can continue.
