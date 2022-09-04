@@ -19,5 +19,11 @@ S3 BUCKET|RESTRICTED
 (1) Autoscaling enabled according to job requirements
 (2) Every restricted resource is tied to an specific, user-provided IP address
 
+# Autoscaling
 
+Currently the user can specify the number of cpus required (as a multiple of 1024, say two cpus would be 2048) and the max capacity utilization needed to trigger scaling up (say 90 for 90% utilization trigger) The scaling down is left to provider defaults. The initial instance count is 1 and the limit is 20 instances.
+
+# Metering
+
+Central to metering is the concept of serviced request. A request is serviced if: it was complete or if the max number of retries has been reached. Logic is in place to allow users: to set the return status and payload of responses as needed. The current number of retries is 2. After any of these conditions is met, the request will be counted. Once the initial limit is reached then the scraping of the cloud resources will be automatically started. Current limit is **100**.
 
