@@ -25,7 +25,7 @@ Only a jar with dependencies (also known as uber jar) is required. Within this j
 
 # What you get
 
-The custom live endpoint fronts an application load balancer with the backing of an ECS cluster with autoscaling enabled where the business logic will be waiting to process requests.
+The custom live endpoint fronts an application load balancer with the backing of an ECS cluster. The business logic will be waiting to process requests inside the resources deployed in this cluster.
 
 # Authorization
 
